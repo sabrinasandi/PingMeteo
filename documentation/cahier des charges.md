@@ -26,4 +26,6 @@
 
 ##Diagramme de classe 
 
+![UML 1](https://user-images.githubusercontent.com/57767498/194040310-571c23de-e4e3-4a62-8544-575856a602e4.jpg)
+![UML 2](https://user-images.githubusercontent.com/57767498/194040311-2294cb36-adb2-459d-8f25-77fe931a4df4.jpg)
 
