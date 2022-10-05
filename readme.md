@@ -13,7 +13,7 @@
 ### Cadrage & périmètre :
 
 
-[Logo(https://u-paris.fr/wp-content/uploads/2022/03/Universite_Paris-Cite-logo.jpeg)]
+Logo(https://u-paris.fr/wp-content/uploads/2022/03/Universite_Paris-Cite-logo.jpeg)
 
 ## Running Application
 
