@@ -13,7 +13,7 @@
 ### Cadrage & périmètre :
 
 
-[Logo(https://iutparis-seine.u-paris.fr/wp-content/uploads/sites/3/2020/12/UniversiteParis_IUTParis-RdS.jpg)]
+[Logo(https://u-paris.fr/wp-content/uploads/2022/03/Universite_Paris-Cite-logo.jpeg)]
 
 ## Running Application
 
