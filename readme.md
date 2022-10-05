@@ -5,6 +5,8 @@
 
 - [@Davia Moujabber](https://github.com/Moujabber)
 
+- [@Keryann In](https://github.com/Sayanox)
+
 
 # Cahier des charges : 
 
