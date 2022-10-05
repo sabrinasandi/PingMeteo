@@ -21,3 +21,9 @@
 - [Conclusion](#conclusion)
 
 - [Bibliographie ](#bibliographie)
+
+#Modélisation conceptuelle et logique des données
+
+##Diagramme de classe 
+
+
