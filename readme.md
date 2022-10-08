@@ -15,7 +15,3 @@
 Le projet consiste à mettre en place une application mobile météorologique. Le but de se projet est de monter en compétence en programmation mobile, en management de projet et en communication.
 
 
-
-
-## Running Application
-
