@@ -8,10 +8,11 @@
 - [@Keryann In](https://github.com/Sayanox)
 
 
-# Cahier des charges : 
+# Cahier des charges  
 
-### Cadrage & périmètre :
+### Cadrage & périmètre 
 
 Le projet consiste à mettre en place une application mobile météorologique. Le but de se projet est de monter en compétence en programmation mobile, en management de projet et en communication.
 
 
+***Pour plus d'information sur le projet, un dossier documentation a été créé en détaillant la conception du projet.***
