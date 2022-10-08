@@ -1,4 +1,4 @@
-## Authors
+## Auteurs
 
 
 - [@Sabrina Sandirasegarane](https://github.com/sabrinasandi)
