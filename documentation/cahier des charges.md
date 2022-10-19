@@ -64,7 +64,7 @@ En effet, sur Trello, nous pouvons faire des user stories mais également voir c
 ## Contraintes
 Les contraintes liées aux projets sont nombreuses. Pour cela, nous pouvons les classer en catégorie.  
 - Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
-- Langage de programmation : Kotlin, Android studio
+- Langage de programmation : Java, Android studio
 - Récupération des datas : API REST
 # Délais et parties prenantes
 ## Délais 
@@ -74,15 +74,16 @@ Le projet est à livrer le ... 2022.
 | :----------------------- | :-----------------------------|
 | Sabrina Sandirasegarane  | Maître d’ouvrage/ Développeuse|
 | Davia Moujabber          | Maître d’ouvrage/ Développeuse|
-| Keyriann In              | Développeuse                  |
+| Keryann In               | Développeur                   |
 
 # Outils
 - Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
 - Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
-- Langage de programmation : Kotlin, Android studio
+- Langage de programmation : Java, Android studio
 - Récupération des datas : API REST
 - Outils diverses : documentation, internet
 - Patterns de programmation : MVC
+- Base de donnée : FireBase
 
 
 
@@ -93,6 +94,9 @@ Nous avons eu un petit temps d'adaptation sur l'utilisation du langage Kotlin ca
 
 #### Solution trouvées  
 Malgré certains problèmes rencontrés, nous avons su faire ça, notre équipe  ont compris l'importance de communiquer via l'outil Trello. Nous avons choisi de bien organiser le code afin d'avoir un code de qualité. En effet, nous avons choisi le pattern de programmation MVC ( modèle vue contrôleur) afin de faire un code de qualité avec le moins de maintenance possible en cas de suppression ou rajout de fonctionnalité. 
+
+
+On avait une idée d'optimisation en factorisant les demandes d'API sur Firebase pour dimlinuer les actions requises sur l'application pourla surchages de l'application. Mais le cadre de l'exercice requière de faire cela dans l'application mobile. ( à rédiger)
 
 #### Retour personnel sur module 
 
