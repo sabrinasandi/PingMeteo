@@ -49,6 +49,7 @@ Afin de schématiser nos données et leurs liens entre elles, nous avons choisi 
 
 
 #### Rédaction
+Pour la partie rédaction, Davia Moujabber va s'occuper de rédiger le cahier des charges. 
 
 # Méthode et contraintes
 ## Méthode
@@ -72,7 +73,7 @@ Le projet est à livrer le ... 2022.
 ## Parties prenantes 
 | Personnes                | Fonction                                        
 | :----------------------- | :-----------------------------|
-| Sabrina Sandirasegarane  | Maître d’ouvrage/ Développeuse|
+| Sabrina Sandirasegarane  | Maître d’ouvrage              |
 | Davia Moujabber          | Maître d’ouvrage/ Développeuse|
 | Keryann In               | Développeur                   |
 
