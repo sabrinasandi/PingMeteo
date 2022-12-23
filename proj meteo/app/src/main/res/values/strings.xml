@@ -1,21 +1,6 @@
 <resources>
-    <string name="app_name">Ping Météo</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <!-- Strings related to ping meteo -->
-    <string name="title_login">Login</string>
-    <string name="title_incription">Sign In</string>
-    <string name="title_option">Option</string>
+    <string name="app_name">TESTING</string>
     <string name="title_home">Home</string>
-    <string name="title_seuil">Seuil</string>
-    <string name="title_newseuil">New Seuil</string>
-    <string name="title_lieu">Lieux</string>
-    <string name="title_newlieu">New Lieux</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
