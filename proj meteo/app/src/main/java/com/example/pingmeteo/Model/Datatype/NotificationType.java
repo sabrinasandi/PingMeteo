@@ -1,7 +1,11 @@
-package com.example.pingmeteo.Model.Datatype;
+package com.example.ping_meteo.Model.Datatype;
 
 public class NotificationType extends Text{
     private int maxTaille;
+
+    public NotificationType(String s) {
+        super(s);
+    }
 
     public int getMaxTaille() {
         return maxTaille;

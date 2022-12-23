@@ -1,4 +1,4 @@
-package com.example.pingmeteo.Model.Datatype;
+package com.example.ping_meteo.Model.Datatype;
 
 public class VitesseType {
     private int valeur;

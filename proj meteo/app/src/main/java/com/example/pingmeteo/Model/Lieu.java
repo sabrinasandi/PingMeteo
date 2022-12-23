@@ -1,15 +1,21 @@
-package com.example.pingmeteo.Model;
+package com.example.ping_meteo.Model;
 
-import com.example.pingmeteo.Model.Datatype.DateType;
-import com.example.pingmeteo.Model.Datatype.GPSType;
-import com.example.pingmeteo.Model.Datatype.HourType;
-import com.example.pingmeteo.Model.Datatype.IdType;
-import com.example.pingmeteo.Model.Datatype.NomType;
+import com.example.ping_meteo.Model.Datatype.DateType;
+import com.example.ping_meteo.Model.Datatype.GPSType;
+import com.example.ping_meteo.Model.Datatype.HourType;
+import com.example.ping_meteo.Model.Datatype.IdType;
+import com.example.ping_meteo.Model.Datatype.NomType;
 
 public class Lieu {
     private IdType id;
     private NomType nom;
     private GPSType position;
+
+    public  Lieu (IdType idé, NomType name, GPSType gps){
+        this.id = idé;
+        this.nom = name;
+        this.position = gps;
+    }
 
     public IdType getId() {
         return id;

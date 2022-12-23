@@ -1,6 +1,6 @@
-package com.example.pingmeteo.Model;
+package com.example.ping_meteo.Model;
 
-import com.example.pingmeteo.Model.Datatype.*;
+import com.example.ping_meteo.Model.Datatype.*;
 
 import java.util.List;
 
