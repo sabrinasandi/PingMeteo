@@ -1,7 +1,7 @@
-package com.example.ping_meteo.Model;
+package com.example.pingmeteo.Model;
 
-import com.example.ping_meteo.Model.Datatype.IdType;
-import com.example.ping_meteo.Model.Datatype.NomType;
+import com.example.pingmeteo.Model.Datatype.IdType;
+import com.example.pingmeteo.Model.Datatype.NomType;
 
 public class Seuil {
     private IdType id;

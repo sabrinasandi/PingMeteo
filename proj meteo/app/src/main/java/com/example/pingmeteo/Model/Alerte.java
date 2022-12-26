@@ -1,8 +1,8 @@
-package com.example.ping_meteo.Model;
+package com.example.pingmeteo.Model;
 
-import com.example.ping_meteo.Model.Datatype.DateType;
-import com.example.ping_meteo.Model.Datatype.NomType;
-import com.example.ping_meteo.Model.Datatype.NotificationType;
+import com.example.pingmeteo.Model.Datatype.DateType;
+import com.example.pingmeteo.Model.Datatype.NomType;
+import com.example.pingmeteo.Model.Datatype.NotificationType;
 
 public class Alerte {
     private Lieu lieuEnQuestion;

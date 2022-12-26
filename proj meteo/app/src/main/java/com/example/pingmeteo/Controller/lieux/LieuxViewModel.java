@@ -1,8 +1,6 @@
-package com.example.ping_meteo.Controller.lieux;
+package com.example.pingmeteo.Controller.lieux;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.*;
 
 public class LieuxViewModel extends ViewModel {
 

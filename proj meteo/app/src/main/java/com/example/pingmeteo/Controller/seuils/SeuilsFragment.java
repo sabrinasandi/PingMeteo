@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Controller.seuils;
+package com.example.pingmeteo.Controller.seuils;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,12 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.ping_meteo.Controller.lieux.LieuViewAdapter;
-import com.example.ping_meteo.Model.Datatype.IdType;
-import com.example.ping_meteo.Model.Datatype.NomType;
-import com.example.ping_meteo.Model.Lieu;
-import com.example.ping_meteo.Model.Seuil;
-import com.example.ping_meteo.databinding.FragmentSeuilsBinding;
+import com.example.pingmeteo.Controller.lieux.LieuViewAdapter;
+import com.example.pingmeteo.Model.Datatype.IdType;
+import com.example.pingmeteo.Model.Datatype.NomType;
+import com.example.pingmeteo.Model.Lieu;
+import com.example.pingmeteo.Model.Seuil;
+import com.example.pingmeteo.databinding.FragmentSeuilsBinding;
 
 import java.util.ArrayList;
 

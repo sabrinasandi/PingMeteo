@@ -1,9 +1,10 @@
-package com.example.ping_meteo;
+package com.example.pingmeteo.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.pingmeteo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 
-import com.example.ping_meteo.databinding.ActivityMainBinding;
+import com.example.pingmeteo.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

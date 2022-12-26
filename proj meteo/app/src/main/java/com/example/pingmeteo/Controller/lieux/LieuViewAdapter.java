@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Controller.lieux;
+package com.example.pingmeteo.Controller.lieux;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,14 +7,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.ping_meteo.Model.Lieu;
-import com.example.ping_meteo.R;
+import com.example.pingmeteo.Model.Lieu;
+import com.example.pingmeteo.R;
 
 import java.util.ArrayList;
 
 public class LieuViewAdapter extends ArrayAdapter<Lieu> {
-    public LieuViewAdapter(Context context, ArrayList<Lieu> lieux) {
-        super(context, 0, lieux);
+    public LieuViewAdapter(Context context, ArrayList<Lieu> lieu) {
+        super(context, 0, lieu);
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

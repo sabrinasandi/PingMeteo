@@ -1,5 +1,6 @@
-package com.example.ping_meteo.Controller.lieux;
+package com.example.pingmeteo.Controller.lieux;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,14 +8,15 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.ping_meteo.Model.Datatype.IdType;
-import com.example.ping_meteo.Model.Datatype.NomType;
-import com.example.ping_meteo.Model.Lieu;
-import com.example.ping_meteo.databinding.FragmentLieuxBinding;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
+
+import com.example.pingmeteo.Model.Datatype.IdType;
+import com.example.pingmeteo.Model.Datatype.NomType;
+import com.example.pingmeteo.Model.Lieu;
+import com.example.pingmeteo.databinding.FragmentLieuxBinding;
 
 import java.util.ArrayList;
 
@@ -25,13 +27,16 @@ public class LieuxFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         LieuxViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(LieuxViewModel.class);
+                new ViewModelProvider((ViewModelStoreOwner) this).get(LieuxViewModel.class);
 
         binding = FragmentLieuxBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         ArrayList<Lieu> your_array_list = new ArrayList<Lieu>();
-        LieuViewAdapter adapter = new LieuViewAdapter(getContext(),your_array_list);
+        LieuViewAdapter adapter = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            adapter = new LieuViewAdapter(getContext(),your_array_list);
+        }
         Lieu newLieu = new Lieu(new IdType(6),new NomType("test"),null);
 
         ListView lv = binding.viewListLieux;

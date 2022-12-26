@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Controller.seuils;
+package com.example.pingmeteo.Controller.seuils;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.ping_meteo.Model.Seuil;
-import com.example.ping_meteo.R;
+import com.example.pingmeteo.Model.Seuil;
+import com.example.pingmeteo.R;
 
 import java.util.ArrayList;
 

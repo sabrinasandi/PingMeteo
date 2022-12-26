@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Controller.home;
+package com.example.pingmeteo.Controller.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.ping_meteo.databinding.FragmentHomeBinding;
+import com.example.pingmeteo.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 

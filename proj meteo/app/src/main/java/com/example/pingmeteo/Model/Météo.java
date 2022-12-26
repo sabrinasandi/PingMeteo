@@ -1,11 +1,11 @@
-package com.example.ping_meteo.Model;
+package com.example.pingmeteo.Model;
 
-import com.example.ping_meteo.Model.Datatype.DateType;
-import com.example.ping_meteo.Model.Datatype.HourType;
-import com.example.ping_meteo.Model.Datatype.IdType;
-import com.example.ping_meteo.Model.Datatype.PluieType;
-import com.example.ping_meteo.Model.Datatype.TemperatureType;
-import com.example.ping_meteo.Model.Datatype.VentType;
+import com.example.pingmeteo.Model.Datatype.DateType;
+import com.example.pingmeteo.Model.Datatype.HourType;
+import com.example.pingmeteo.Model.Datatype.IdType;
+import com.example.pingmeteo.Model.Datatype.PluieType;
+import com.example.pingmeteo.Model.Datatype.TemperatureType;
+import com.example.pingmeteo.Model.Datatype.VentType;
 
 public class Météo {
     private Lieu lieu;

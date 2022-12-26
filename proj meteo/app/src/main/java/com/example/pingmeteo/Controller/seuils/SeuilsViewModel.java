@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Controller.seuils;
+package com.example.pingmeteo.Controller.seuils;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

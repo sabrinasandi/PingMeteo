@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Model.Datatype;
+package com.example.pingmeteo.Model.Datatype;
 
 public class Text {
     private String valeur;

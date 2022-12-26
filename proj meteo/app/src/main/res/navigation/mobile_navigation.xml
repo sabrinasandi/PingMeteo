@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.ping_meteo.Controller.home.HomeFragment"
+        android:name="com.example.pingmeteo.Controller.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_lieux"
-        android:name="com.example.ping_meteo.Controller.lieux.LieuxFragment"
+        android:name="com.example.pingmeteo.Controller.lieux.LieuxFragment"
         android:label="@string/title_lieux"
         tools:layout="@layout/fragment_lieux" />
 
     <fragment
         android:id="@+id/navigation_seuils"
-        android:name="com.example.ping_meteo.Controller.seuils.SeuilsFragment"
+        android:name="com.example.pingmeteo.Controller.seuils.SeuilsFragment"
         android:label="@string/title_seuils"
         tools:layout="@layout/fragment_seuils" />
 </navigation>

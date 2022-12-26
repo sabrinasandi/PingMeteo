@@ -1,4 +1,4 @@
-package com.example.ping_meteo.Model.Datatype;
+package com.example.pingmeteo.Model.Datatype;
 
 public class MotDePasseType extends Text{
     private final int MINTAILLE = 6; // a voir si on change
