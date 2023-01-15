@@ -3,8 +3,4 @@
     <string name="title_home">Home</string>
     <string name="title_lieux">Lieux</string>
     <string name="title_seuils">Seuils</string>
-    <string name="prompt_email">example@mail.com</string>
-    <string name="prompt_password">****</string>
-    <string name="action_sign_in_short">Please enter password</string>
-    <string name="action_sign_in">Please log in</string>
 </resources>
