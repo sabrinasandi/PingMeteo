@@ -91,7 +91,7 @@ Le projet est à livrer le ... 2022.
 # Conclusion 
 
 #### Problèmes rencontrés 
-Nous avons eu un petit temps d'adaptation sur l'utilisation du langage Kotlin car aucun de nous trois le connaissait au préalable. 
+Nous avons eu un petit temps d'adaptation sur l'utilisation d'android studio et du langage Java car nous avions peu de pratique au préalable. 
 
 #### Solution trouvées  
 Malgré certains problèmes rencontrés, nous avons su faire ça, notre équipe  ont compris l'importance de communiquer via l'outil Trello. Nous avons choisi de bien organiser le code afin d'avoir un code de qualité. En effet, nous avons choisi le pattern de programmation MVC ( modèle vue contrôleur) afin de faire un code de qualité avec le moins de maintenance possible en cas de suppression ou rajout de fonctionnalité. 
