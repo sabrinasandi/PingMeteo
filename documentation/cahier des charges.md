@@ -2,9 +2,8 @@
 
 - [Cadrage & périmètre](#cadrage--périmètre) 
      
-
 - [Expression fonctionnelle du besoin](#expression-fonctionnelle-du-besoin)
-  - [Modélisation conceptuelle et logique des données](#modélisation-conceptuelle-et-logique-des-données)  
+  - [Modélisation conceptuelle et logique des données](#modélisation-conceptuelle-des-données)  
   - [Répartition des tâches](#répartition-des-tâches)
 
 - [Méthodes et contraintes ](#méthode-et-contraintes) 
@@ -13,9 +12,6 @@
    - [Délais](#délais)
    - [Parties prenantes](#parties-prenantes)
 - [Outils](#outils)
-
-- [Pattern de programmation](#pattern-de-programmation)
-
 - [Conclusion](#conclusion)
 
 - [Bibliographie ](#bibliographie)
@@ -26,7 +22,7 @@ Le projet consiste à mettre en place une application mobile météorologique. L
 
 # Expression fonctionnelle du besoin
 
-Afin de schématiser nos données et leurs liens entre elles, nous avons choisi de les représenter sous forme de MCD/MLD.
+Afin de schématiser nos données et leurs liens entre elles, nous avons choisi de les représenter sous forme de diagramme de classe.
 
 ## Modélisation conceptuelle des données
 
@@ -38,14 +34,13 @@ Afin de schématiser nos données et leurs liens entre elles, nous avons choisi 
 ## Répartition des tâches
 
 #### Fonctionnalité 
-| Fonction                    | Attribution                                       | Fonctionnelle (oui/non) |
-|:----------------------------| :-------------------------------------------------|:------------------------|
-| `Création Météo`            |                                                   |                         |
-| `Lieux`                     |                                                   |                         |
-| `Préférences`               |                                                   |                         |
-| `Seuil`                     |                                                   |                         |
-| `Création alter`            |                                                   |                         |
-| `Consultation utilisateurs` |                                                   |                         |
+| Fonction                         | Fonctionnelle (oui/non) |
+|:---------------------------------|:------------------------|
+| `Afficher informations météo`    |            oui          |
+| `Afficher des notifications`     |            oui          |
+| `Afficher des données récupérées`|            oui          |
+| `Seuil`                          |            oui          |
+| `Enregistrer des villes`         |            oui          |
 
 
 #### Rédaction
@@ -69,11 +64,11 @@ Les contraintes liées aux projets sont nombreuses. Pour cela, nous pouvons les 
 - Récupération des datas : API REST
 # Délais et parties prenantes
 ## Délais 
-Le projet est à livrer le ... 2022.
+Le projet est à livrer à partir de février 2023.
 ## Parties prenantes 
 | Personnes                | Fonction                                        
 | :----------------------- | :-----------------------------|
-| Sabrina Sandirasegarane  | Maître d’ouvrage              |
+| Sabrina Sandirasegarane  | Maître d’ouvrage/ Développeuse|
 | Davia Moujabber          | Maître d’ouvrage/ Développeuse|
 | Keryann In               | Développeur                   |
 
@@ -96,8 +91,7 @@ Nous avons eu un petit temps d'adaptation sur l'utilisation d'android studio et 
 #### Solution trouvées  
 Malgré certains problèmes rencontrés, nous avons su faire ça, notre équipe  ont compris l'importance de communiquer via l'outil Trello. Nous avons choisi de bien organiser le code afin d'avoir un code de qualité. En effet, nous avons choisi le pattern de programmation MVC ( modèle vue contrôleur) afin de faire un code de qualité avec le moins de maintenance possible en cas de suppression ou rajout de fonctionnalité. 
 
-
-On avait une idée d'optimisation en factorisant les demandes d'API sur Firebase pour dimlinuer les actions requises sur l'application pourla surchages de l'application. Mais le cadre de l'exercice requière de faire cela dans l'application mobile. ( à rédiger)
+Nous avons eu une idée pour améliorer notre application mobile. Celle de l'optimisation en factorisant les demandes d'API sur Firebase pour diminuer les actions requises sur l'application afin d'éviter la surchages de l'application. 
 
 #### Retour personnel sur module 
 
