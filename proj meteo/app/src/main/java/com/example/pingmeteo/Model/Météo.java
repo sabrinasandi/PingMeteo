@@ -9,12 +9,27 @@ import com.example.pingmeteo.Model.Datatype.VentType;
 
 public class Météo {
     private Lieu lieu;
-    private IdType id;
     private TemperatureType température;
     private HourType heure;
     private DateType date;
     private PluieType pluie;
     private VentType vent;
+
+    //Constructeur réduit pour météo actuel
+    public Météo(Lieu lieu, TemperatureType température,  PluieType pluie, VentType vent) {
+        this.lieu = lieu;
+        this.température = température;
+        this.pluie = pluie;
+        this.vent = vent;
+    }
+    public Météo(Lieu lieu, TemperatureType température, HourType heure, DateType date, PluieType pluie, VentType vent) {
+        this.lieu = lieu;
+        this.température = température;
+        this.heure = heure;
+        this.date = date;
+        this.pluie = pluie;
+        this.vent = vent;
+    }
 
     public Lieu getLieu() {
         return lieu;
@@ -22,14 +37,6 @@ public class Météo {
 
     public void setLieu(Lieu lieu) {
         this.lieu = lieu;
-    }
-
-    public IdType getId() {
-        return id;
-    }
-
-    public void setId(IdType id) {
-        this.id = id;
     }
 
     public TemperatureType getTempérature() {

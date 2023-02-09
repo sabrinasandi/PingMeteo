@@ -6,6 +6,11 @@ public class TemperatureType {
 
     private TemperatureUnit unite;
 
+    public TemperatureType(int temp, TemperatureUnit celsius) {
+        this.valeur = temp;
+        this.unite = celsius;
+    }
+
     public int getValeur() {
         return valeur;
     }

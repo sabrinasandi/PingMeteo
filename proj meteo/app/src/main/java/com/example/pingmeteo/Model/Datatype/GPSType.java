@@ -3,8 +3,10 @@ package com.example.pingmeteo.Model.Datatype;
 public class GPSType {
     private double latitute;
     private double longitude;
-    public GPSType(double val){
+    public GPSType(double latitute, double longitude){
+
         this.latitute = latitute;
+        this.longitude = longitude;
     }
     public double getLatitute() {
         return latitute;

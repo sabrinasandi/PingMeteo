@@ -4,6 +4,10 @@ public class VentType {
     private VitesseType vitesseVent;
     private QualitéVent typeVent;
 
+    public VentType(VitesseType vitesseVent) {
+        this.vitesseVent = vitesseVent;
+    }
+
     public VitesseType getVitesseVent() {
         return vitesseVent;
     }

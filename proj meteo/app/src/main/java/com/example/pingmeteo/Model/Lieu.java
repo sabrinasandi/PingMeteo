@@ -16,6 +16,15 @@ public class Lieu {
         this.nom = name;
         this.position = gps;
     }
+    public  Lieu (NomType name, GPSType gps){
+        this.nom = name;
+        this.position = gps;
+    }
+
+    public Lieu(String cityName, double latitude, double longitude) {
+        this.nom = new NomType(cityName);
+        this.position = new GPSType(latitude,longitude);
+    }
 
     public IdType getId() {
         return id;
