@@ -1,11 +1,14 @@
 package com.example.pingmeteo.Controller.lieux;
 
 import androidx.fragment.app.Fragment;
+
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 
@@ -20,7 +23,7 @@ import com.example.pingmeteo.databinding.FragmentLieuxBinding;
 
 import java.util.ArrayList;
 
-public class LieuxFragment extends Fragment {
+public abstract class LieuxFragment extends Fragment {
 
     private FragmentLieuxBinding binding;
 
@@ -39,8 +42,9 @@ public class LieuxFragment extends Fragment {
         }
         Lieu newLieu = new Lieu(new IdType(6),new NomType("test"),null);
 
-        ListView lv = binding.viewListLieux;
+        ListView lv = binding.fragmentLieuxViewListLieux;
         lv.setAdapter(adapter);
+        ImageButton addLieu = binding.fragmentLieuxLieuxAdd;
 
         adapter.add(newLieu);
         newLieu.setNom(new NomType("oof"));
@@ -51,7 +55,14 @@ public class LieuxFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Lieu selectedItem = (Lieu) parent.getItemAtPosition(position);
-                binding.LieuxLabel.setText("lieu selected: " + selectedItem.getNom().getValeur());
+                binding.fragmentLieuxLieuxLabel.setText("lieu selected: " + selectedItem.getNom().getValeur());
+            }
+        });
+        addLieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NewLieuxFragment dialogFragment = new NewLieuxFragment();
+                dialogFragment.show(getFragmentManager(), "dialog");
             }
         });
         return root;
@@ -63,4 +74,6 @@ public class LieuxFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+    public abstract Dialog onCreateDialog(Bundle savedInstanceState);
 }

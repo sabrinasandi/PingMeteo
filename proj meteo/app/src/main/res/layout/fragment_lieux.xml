@@ -6,19 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Controller.lieux.LieuxFragment">
 
-    <ImageView
-        android:id="@+id/lieuxWallpaper"
-        android:layout_width="517dp"
-        android:layout_height="756dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lune" />
-
 
     <TextView
-        android:id="@+id/LieuxLabel"
+        android:id="@+id/fragment_lieux_LieuxLabel"
         android:layout_width="82dp"
         android:layout_height="31dp"
         android:layout_marginTop="32dp"
@@ -29,8 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/fragment_lieux_lieuxWallpaper"
+        android:layout_width="517dp"
+        android:layout_height="756dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clouds" />
+
     <ImageButton
-        android:id="@+id/lieuxAdd"
+        android:id="@+id/fragment_lieux_lieuxAdd"
         android:layout_width="60dp"
         android:layout_height="74dp"
         android:layout_marginBottom="132dp"
@@ -41,13 +41,13 @@
         android:contentDescription="Ajouter un lieu"/>
 
     <ListView
-        android:id="@+id/view_list_lieux"
+        android:id="@+id/fragment_lieux_view_list_lieux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/lieuxAdd"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_lieux_lieuxAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LieuxLabel"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lieux_LieuxLabel"
         app:layout_constraintVertical_bias="0.499"></ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
