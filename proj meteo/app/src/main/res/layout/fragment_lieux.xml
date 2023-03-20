@@ -4,46 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1C457"
     tools:context=".Controller.lieux.LieuxFragment">
 
 
     <TextView
         android:id="@+id/fragment_lieux_LieuxLabel"
-        android:layout_width="82dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="65dp"
+        android:layout_height="46dp"
         android:text="Lieux"
-        android:textColor="#FBFAFA"
-        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <ImageView
-        android:id="@+id/fragment_lieux_lieuxWallpaper"
-        android:layout_width="517dp"
-        android:layout_height="756dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/clouds" />
 
     <ImageButton
         android:id="@+id/fragment_lieux_lieuxAdd"
         android:layout_width="60dp"
         android:layout_height="74dp"
         android:layout_marginBottom="132dp"
+        android:contentDescription="Ajouter un lieu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:contentDescription="Ajouter un lieu"/>
+        app:srcCompat="@android:drawable/ic_input_add" />
 
     <ListView
         android:id="@+id/fragment_lieux_view_list_lieux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment_lieux_lieuxAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

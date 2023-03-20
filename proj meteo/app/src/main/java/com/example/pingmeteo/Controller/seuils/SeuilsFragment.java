@@ -1,9 +1,11 @@
 package com.example.pingmeteo.Controller.seuils;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.pingmeteo.Controller.lieux.LieuViewAdapter;
 import com.example.pingmeteo.Model.Datatype.IdType;
 import com.example.pingmeteo.Model.Datatype.NomType;
+import com.example.pingmeteo.Model.FirebaseConnexion;
 import com.example.pingmeteo.Model.Lieu;
 import com.example.pingmeteo.Model.Seuil;
 import com.example.pingmeteo.databinding.FragmentSeuilsBinding;
@@ -26,26 +29,26 @@ public class SeuilsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SeuilsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(SeuilsViewModel.class);
+        SeuilsViewModel notificationsViewModel =new ViewModelProvider(this).get(SeuilsViewModel.class);
 
         binding = FragmentSeuilsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.SeuilLabel;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        ArrayList<Seuil> your_array_list = new ArrayList<Seuil>();
-        SeuilViewAdapter adapter = new SeuilViewAdapter(getContext(),your_array_list);
-        Seuil newSeuil = new Seuil(new IdType(6),new NomType("test"));
+        ArrayList<Seuil> seuils = FirebaseConnexion.getInstance().getSeuils();
+        SeuilViewAdapter adapter = new SeuilViewAdapter(getContext(),seuils);
 
         ListView lv = binding.viewListSeuils;
         lv.setAdapter(adapter);
+        ImageButton seuilAdd = binding.SeuilAdd;
+        seuilAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SeuilFormActivity seuilForm = new SeuilFormActivity();
+                seuilForm.show(getActivity().getSupportFragmentManager(), "Seuil Form");
+            }
+        });
 
-        adapter.add(newSeuil);
-        adapter.add(newSeuil);
-        adapter.add(newSeuil);
-        adapter.add(newSeuil);
         return root;
     }
 

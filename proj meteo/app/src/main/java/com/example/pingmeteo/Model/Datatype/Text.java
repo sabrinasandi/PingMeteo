@@ -6,6 +6,9 @@ public class Text {
     public Text(String s){
         valeur = s;
     }
+    public Text(){
+
+    }
 
     public String getValeur() {
         return valeur;

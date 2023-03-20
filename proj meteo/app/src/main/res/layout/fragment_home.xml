@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Le temps est "
+        android:text="Temps: "
         android:textColor="@color/white"
         android:textIsSelectable="false"
         android:textSize="34sp"

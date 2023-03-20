@@ -11,6 +11,10 @@ public class Lieu {
     private NomType nom;
     private GPSType position;
 
+    public Lieu() {
+        // Default constructor required for calls to DataSnapshot.getValue(Lieu.class)
+    }
+
     public  Lieu (IdType idé, NomType name, GPSType gps){
         this.id = idé;
         this.nom = name;

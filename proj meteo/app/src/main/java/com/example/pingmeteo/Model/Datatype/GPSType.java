@@ -8,6 +8,9 @@ public class GPSType {
         this.latitute = latitute;
         this.longitude = longitude;
     }
+    public GPSType(){
+
+    }
     public double getLatitute() {
         return latitute;
     }
