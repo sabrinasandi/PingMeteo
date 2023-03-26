@@ -7,17 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
-import com.example.pingmeteo.Controller.lieux.LieuViewAdapter;
-import com.example.pingmeteo.Model.Datatype.IdType;
-import com.example.pingmeteo.Model.Datatype.NomType;
 import com.example.pingmeteo.Model.FirebaseConnexion;
-import com.example.pingmeteo.Model.Lieu;
 import com.example.pingmeteo.Model.Seuil;
 import com.example.pingmeteo.databinding.FragmentSeuilsBinding;
 

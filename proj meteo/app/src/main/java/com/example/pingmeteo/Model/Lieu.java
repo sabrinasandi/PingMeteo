@@ -6,7 +6,9 @@ import com.example.pingmeteo.Model.Datatype.HourType;
 import com.example.pingmeteo.Model.Datatype.IdType;
 import com.example.pingmeteo.Model.Datatype.NomType;
 
-public class Lieu {
+import java.io.Serializable;
+
+public class Lieu implements Serializable {
     private IdType id;
     private NomType nom;
     private GPSType position;

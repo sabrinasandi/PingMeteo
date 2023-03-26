@@ -7,13 +7,16 @@ import com.example.pingmeteo.Model.Datatype.PluieType;
 import com.example.pingmeteo.Model.Datatype.TemperatureType;
 import com.example.pingmeteo.Model.Datatype.VentType;
 
-public class Météo {
+import java.io.Serializable;
+
+public class Météo implements Serializable {
     private Lieu lieu;
     private TemperatureType température;
     private HourType heure;
     private DateType date;
     private PluieType pluie;
     private VentType vent;
+    private String dateToString;
 
     //Constructeur réduit pour météo actuel
     public Météo(Lieu lieu, TemperatureType température,  PluieType pluie, VentType vent) {
@@ -29,6 +32,14 @@ public class Météo {
         this.date = date;
         this.pluie = pluie;
         this.vent = vent;
+    }
+
+    public String getDateToString() {
+        return dateToString;
+    }
+
+    public void setDateToString(String dateToString) {
+        this.dateToString = dateToString;
     }
 
     public Lieu getLieu() {

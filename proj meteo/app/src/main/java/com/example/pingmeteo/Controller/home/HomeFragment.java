@@ -16,7 +16,6 @@ import android.view.ViewGroup;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.pingmeteo.Controller.MeteoAsyncTask;
 import com.example.pingmeteo.Model.Lieu;
 import com.example.pingmeteo.databinding.FragmentHomeBinding;
 
@@ -59,17 +58,6 @@ public class HomeFragment extends Fragment {
         MeteoAsyncTask task = new MeteoAsyncTask(binding);
         task.execute(posactu);
 
-        /*
-        try {
-            Météo météoHome = CallMeteo.meteoActuel(posactu);
-            binding.fragmentHomeTextPos.setText(météoHome.getLieu().getNom().getValeur());
-            binding.fragmentHomeTextTemp.setText(météoHome.getTempérature().getValeur() + " °C"); //voir comment utiliser le type pour ça
-            binding.fragmentHomeTextPluietype.setText("Le temps est "+ météoHome.getPluie().getDescriptionPluie());
-        } catch (NullPointerException e) {
-            binding.fragmentHomeTextPluietype.setText("Caught NullPointerException: " + e.getMessage());
-            binding.fragmentHomeTextPos.setText(posactu.getNom().getValeur());
-            binding.fragmentHomeTextTemp.setText(posactu.getPosition().getLatitute() + " " + posactu.getPosition().getLongitude());
-        }*/
 
         return root;
     }

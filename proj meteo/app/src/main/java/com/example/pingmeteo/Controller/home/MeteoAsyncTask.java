@@ -1,4 +1,4 @@
-package com.example.pingmeteo.Controller;
+package com.example.pingmeteo.Controller.home;
 
 import android.os.AsyncTask;
 
@@ -34,8 +34,6 @@ public class MeteoAsyncTask extends AsyncTask<Lieu, Void, Météo> {
             binding.fragmentHomeTextPluietype.setText("Le temps est " + meteo.getPluie().getDescriptionPluie());
         } else {
             binding.fragmentHomeTextPluietype.setText("Caught NullPointerException: ");
-            //binding.fragmentHomeTextPos.setText(posactu.getNom().getValeur());
-            //binding.fragmentHomeTextTemp.setText(posactu.getPosition().getLatitute() + " " + posactu.getPosition().getLongitude());
         }
     }
 }
