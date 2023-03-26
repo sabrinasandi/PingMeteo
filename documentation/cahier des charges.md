@@ -37,14 +37,12 @@ Afin de schématiser nos données et leurs liens entre elles, nous avons choisi 
 | Fonction                         | Fonctionnelle (oui/non) |
 |:---------------------------------|:------------------------|
 | `Afficher informations météo`    |            oui          |
-| `Afficher des notifications`     |            oui          |
+| `Afficher des notifications`     |            non          |
 | `Afficher des données récupérées`|            oui          |
 | `Seuil`                          |            oui          |
 | `Enregistrer des villes`         |            oui          |
 
 
-#### Rédaction
-Pour la partie rédaction, Davia Moujabber va s'occuper de rédiger le cahier des charges. 
 
 # Méthode et contraintes
 ## Méthode
@@ -60,11 +58,13 @@ En effet, sur Trello, nous pouvons faire des user stories mais également voir c
 ## Contraintes
 Les contraintes liées aux projets sont nombreuses. Pour cela, nous pouvons les classer en catégorie.  
 - Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
-- Langage de programmation : Java, Android studio
-- Récupération des datas : API REST
+- Langage de programmation : Java, XML
+- Outils de développement : Android Studio, Intellij 
+- Récupération des datas : OpenWeather 
+
 # Délais et parties prenantes
 ## Délais 
-Le projet est à livrer à partir de février 2023.
+Le projet est à livrer à partir de mars 2023.
 ## Parties prenantes 
 | Personnes                | Fonction                                        
 | :----------------------- | :-----------------------------|
@@ -73,20 +73,20 @@ Le projet est à livrer à partir de février 2023.
 | Keryann In               | Développeur                   |
 
 # Outils
+
 - Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
-- Outils rédactionnels & organisationnels  : utilisation de Markdown, Trello et Git 
-- Langage de programmation : Java, Android studio
-- Récupération des datas : API REST
+- Langage de programmation : Java, XML
+- Récupération des datas : OpenWeather
 - Outils diverses : documentation, internet
 - Patterns de programmation : MVC
-- Base de donnée : FireBase
+- Base de données : FireBase
 
 
 
 # Conclusion 
 
 #### Problèmes rencontrés 
-Nous avons eu un petit temps d'adaptation sur l'utilisation d'android studio et du langage Java car nous avions peu de pratique au préalable. 
+Nous avons eu un petit temps d'adaptation sur l'utilisation d'Android Studio et du langage Java car nous avions peu de pratique au préalable. 
 
 #### Solution trouvées  
 Malgré certains problèmes rencontrés, nous avons su faire ça, notre équipe  ont compris l'importance de communiquer via l'outil Trello. Nous avons choisi de bien organiser le code afin d'avoir un code de qualité. En effet, nous avons choisi le pattern de programmation MVC ( modèle vue contrôleur) afin de faire un code de qualité avec le moins de maintenance possible en cas de suppression ou rajout de fonctionnalité. 
@@ -95,14 +95,12 @@ Nous avons eu une idée pour améliorer notre application mobile. Celle de l'opt
 
 #### Retour personnel sur module 
 
-Ce projet nous a permis de montrer nos compétences,de mettre en place les notions théoriques apprises à la pratique mais aussi d'apprendre de nouveaux outils.Grâce au module, nous avons pu apprendre à mieux travailler en équipe via github. En effet, l'utilisation du Git étant assez floue pour la plupart des membres de l'équipe, ce projet a permis de mieux comprendre le fonctionnement et l'utilisation de Git. 
+Ce projet nous a permis de montrer nos compétences, de mettre en place les notions théoriques apprises à la pratique mais aussi d'apprendre de nouveaux outils. Grâce au module, nous avons pu apprendre à mieux travailler en équipe via github. En effet, l'utilisation du Git étant assez floue pour la plupart des membres de l'équipe, ce projet a permis de mieux comprendre le fonctionnement et l'utilisation de Git. 
 
 Il est toujours difficile de réaliser un travail en groupe mais nous avons pu avancer ensemble sur la réalisation de ce projet tout en respectant les méthodes d'organisation que nous avons mise en place dès le début du projet et nous avons atteint tous les objectifs principaux au niveau des fonctionnalités principales que nous avions fixés. 
 
 # Bibliographie 
 - [Aide alias de commande](https://github.com/ViBiOh/dotfiles/blob/main/symlinks/gitconfig)
-
-- [Cours de Génie Logiciel](l3miage.fr)
 - [Aide Markdown](https://github.com/InseeFrLab/utilitR/blob/master/03_Fiches_thematiques/Fiche_rmarkdown.Rmd)
 - [Editeur Markdown](readme.so)
 
