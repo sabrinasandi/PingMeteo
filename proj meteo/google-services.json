@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225607962417",
+    "project_id": "pingmeteo",
+    "storage_bucket": "pingmeteo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225607962417:android:2c0e55d965f31c0288aa10",
+        "android_client_info": {
+          "package_name": "com.example.pingmeteo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225607962417-pm521pitl7vcfcuc3ton02jq87unuin0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC97_KEbA8H8CoVHyDuDK1wnaGDmNQDScc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225607962417-pm521pitl7vcfcuc3ton02jq87unuin0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

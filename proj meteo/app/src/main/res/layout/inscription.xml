@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#115491"
+    tools:context=".View.RegisterActivity">
+
+    <TextView
+        android:id="@+id/inscription_lblReturnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="J'ai déjà un compte?"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inscription_lblConnexion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/inscription_lblMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mot de passe"
+        android:textColor="#430C0C0C"
+        android:textColorHint="#45FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_editTextEmailAddress" />
+
+    <ImageView
+        android:id="@+id/inscription_imageRegister"
+        android:layout_width="256dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lune" />
+
+    <EditText
+        android:id="@+id/inscription_editTextEmailAddress"
+        android:layout_width="260dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F1EBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_imageRegister" />
+
+    <EditText
+        android:id="@+id/inscription_editTextPassword"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#EDE9E9"
+        android:textColorHint="#FBF7F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_editTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/inscription_editTextPasswordConf"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Confirmer mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#EDE9E9"
+        android:textColorHint="#FBF7F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_editTextPassword" />
+
+    <Button
+        android:id="@+id/inscription_boutton"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#00BCD4"
+        android:text="INSCRIPTION"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/inscription_lblMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Adresse Mail"
+        android:textColor="#430C0C0C"
+        android:textColorHint="#45FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_imageRegister" />
+
+    <TextView
+        android:id="@+id/inscription_lblConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Connexion"
+        android:textColor="#FBF8F8"
+        android:textColorHint="#FBFBFB"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inscription_lblReturnLogin" />
+
+    <TextView
+        android:id="@+id/inscription_lblProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compte déjà existant"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/inscription_boutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscription_editTextPasswordConf"
+        app:layout_constraintVertical_bias="0.442"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

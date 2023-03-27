@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PING_METEO</string>
+    <string name="app_name">pingmeteo</string>
     <string name="title_home">Home</string>
     <string name="title_lieux">Lieux</string>
     <string name="title_seuils">Seuils</string>

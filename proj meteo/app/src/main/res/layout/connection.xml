@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:background="#EA6F25"
+        tools:context=".View.LoginActivity" >
+
+    <TextView
+        android:id="@+id/connection_lblMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Mot de passe"
+        android:textColor="#430C0C0C"
+        android:textColorHint="#45FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/connection_editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/connection_imageRegister"
+        android:layout_width="256dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/soleil" />
+
+    <EditText
+        android:id="@+id/connection_editTextEmailAddress"
+        android:layout_width="260dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F1EBEB"
+        app:layout_constraintBottom_toTopOf="@+id/connection_lblMdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connection_lblMail"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <EditText
+        android:id="@+id/connection_editTextPassword"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#EDE9E9"
+        android:textColorHint="#FBF7F7"
+        app:layout_constraintBottom_toTopOf="@+id/connection_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/connection_mdpforgotten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MOT DE PASSE OUBLIE?"
+        android:textColor="#FDFCFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connection_editTextPassword"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/connection_lblconnectgoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Ou connectez-vous avec google"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/connection_button"
+        android:layout_width="236dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E96F25"
+        android:cursorVisible="false"
+        android:text="CONNEXION"
+        app:cornerRadius="@android:dimen/thumbnail_width"
+        app:layout_constraintBottom_toTopOf="@+id/connection_gotoinscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/connection_gotoinscription"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#115491"
+        android:text="INSCRIPTION"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toTopOf="@+id/connection_lblconnectgoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/connection_lblMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Adresse Mail"
+        android:textColor="#430C0C0C"
+        android:textColorHint="#45FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connection_imageRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
